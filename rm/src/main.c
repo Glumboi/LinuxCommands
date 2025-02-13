@@ -5,6 +5,7 @@ int main(int argc, char const *argv[])
     if (argc <= 1)
     {
         fprintf(stderr, "No file/s for removal specified!\n");
+        return -1;
     }
 
     for (size_t i = 1; i < argc; i++)
